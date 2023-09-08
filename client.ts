@@ -157,7 +157,7 @@ const controls = new OrbitControls(camera, renderer.domElement)
 const loader = new GLTFLoader()
 
 loader.load(
-    'models/scene.gltf',
+    'test/scene.gltf',
     function (gltf) {
         gltf.scene.traverse(function (child) {
             if ((child as THREE.Mesh).isMesh) {
